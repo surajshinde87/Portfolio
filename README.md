@@ -36,7 +36,8 @@ portfolio/
 ├── public/             # Static assets
 ├── src/
 │   ├── components/     # Reusable UI components (Hero, About, Experience, Skills, Projects, Blog Contact)
+|   ├── hooks/          # Manages Dark and Light Theme
 │   ├── images/         # Profile & project images
 │   ├── App.jsx          # Main app component
-│   └── index.jsx       # Entry point
+│   └── main.jsx       # Entry point
 └── package.json
