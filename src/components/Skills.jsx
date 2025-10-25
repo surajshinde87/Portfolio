@@ -28,6 +28,7 @@ const skills = [
       { name: "Node.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
       { name: "Express.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
       { name: "REST APIs", logo: "https://cdn-icons-png.flaticon.com/512/6011/6011885.png" },
+      { name: "JWT", logo: "https://jwt.io/img/pic_logo.svg" },
     ],
   },
   {
@@ -39,6 +40,10 @@ const skills = [
       { name: "MySQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
       { name: "Firebase", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" },
       { name: "PostgreSQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
+      {name: "Workbench", logo: "https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg" },
+      {name: "JDBC", logo: "https://www.vectorlogo.zone/logos/java/java-icon.svg" },
+      {name: "JPA", logo: "https://www.vectorlogo.zone/logos/java/java-icon.svg" }
+
     ],
   },
   {
@@ -51,6 +56,8 @@ const skills = [
       { name: "Docker", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
       { name: "Netlify", logo: "https://www.vectorlogo.zone/logos/netlify/netlify-icon.svg" },
       { name: "Vercel", logo: "https://www.svgrepo.com/show/327408/logo-vercel.svg" },
+      { name: "VS Code", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
+      {name: "Eclipse", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" }
     ],
   },
 ];

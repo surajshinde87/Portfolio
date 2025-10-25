@@ -24,7 +24,7 @@ export const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a
-  href="#home"
+  href="/"
   className="logofont text-3xl font-bold font-sans bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:animate-pulse transition-all duration-500"
 >
   &lt; SS /&gt;

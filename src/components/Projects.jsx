@@ -4,15 +4,15 @@ import { Github, ExternalLink } from "lucide-react";
 import medicheck from "../images/medicheck.png";
 import gemini from "../images/gemini.png";
 import agrios from "../images/agrios.png";
-import todo_list from "../images/todo list.png";
+import agrisync from "../images/agrisync.png";
 import web_quize from "../images/web quiz.png";
 import healthcare_dashborad from "../images/healthcare dashboard.png";
 
 const projects = [
   {
-    title: "Hospital Management App",
+    title: "MediCheck – Doctor Appointment Booking System",
     description:
-      "A full-stack e-commerce platform built with React, Node.js, and MongoDB",
+      "A full-stack web application for booking doctor appointments with features like user authentication, appointment scheduling, and payment integration.",
     image: medicheck,
     technologies: [
       "React",
@@ -24,47 +24,48 @@ const projects = [
     ],
     live: "https://medichecks.netlify.app/",
   },
-    {
-    title: "HealthCare Dashboard",
-    description: "Simple Health care Dashboard.",
-    image: healthcare_dashborad,
+
+  {
+    title: "AgriSync – Agriculture Marketplace Platform",
+    description:
+      "A Java full-stack platform connecting Farmers, Buyers, and Drivers for direct crop trading and delivery management.",
+    image: agrisync,
     technologies: [
-      "React",
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Responsive Designs",
+      "React.js",
+      "Java",
+      "Spring Boot",
+      "MySQL",
+      "Hibernate",
+      "JWT",
+      "WebSocket",
+      "REST APIs",
+    ],
+    live: "https://github.com/surajshinde87/AgriSync.git",
+  },
+  {
+    title: "HealthCare Dashboard",
+    description: "A responsive healthcare dashboard UI showcasing patient data, appointments, and analytics.",
+    image: healthcare_dashborad,
+    technologies: ["React", "HTML", "CSS", "JavaScript", "Responsive Designs", "Media Queries", 
+    "Flexbox", "Flat icons"
     ],
     live: "https://healthcareappdashboard.netlify.app/",
   },
-  
+
   {
-    title: "Landing Page",
-    description: "Agricultural website landing page with working functionality.",
+    title: " Agrios - Landing Page",
+    description:
+      "Agricultural website landing page with working functionality.",
     image: agrios,
     technologies: ["HTML", "CSS", "Javascript", "Tailwind CSS"],
     live: "https://surajshinde87.github.io/agrios-landing-page/",
-  },
-  {
-    title: "Todo List",
-    description:
-      "A simple list of tasks where you can add new tasks and delete tasks.",
-    image: todo_list,
-    technologies: ["React", "Javascript", "Tailwind CSS", "Responsive Design"],
-    live: "https://surajshinde87.github.io/todo-list/",
   },
   {
     title: "Quiz Website",
     description:
       "You can test your coding knowledge here by answering the questions.",
     image: web_quize,
-    technologies: [
-      "HTML",
-      "CSS",
-      "Javascript",
-      "Bootstrap",
-      "Responsive",
-    ],
+    technologies: ["HTML", "CSS", "Javascript", "Bootstrap", "Responsive"],
     live: "https://surajshinde87.github.io/web-quiz/",
   },
   {
@@ -73,9 +74,8 @@ const projects = [
       "The modern and responsive website designed to replicate the functionality.",
     image: gemini,
     technologies: ["React", "Gemini Api", "Tailwind CSS", "Node.js"],
-    live: "https://66d5481e51e7a49d06d09f2f--gemini-clone-surajshinde.netlify.app/",
+    live: "https://gemini-clone-surajshinde.netlify.app/",
   },
-
 ];
 
 export const Projects = () => {
