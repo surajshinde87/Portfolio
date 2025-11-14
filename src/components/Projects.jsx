@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Github, ExternalLink } from "lucide-react";
 import medicheck from "../images/medicheck.png";
 import gemini from "../images/gemini.png";
-import agrios from "../images/agrios.png";
+import recipechef from "../images/ai-recipe-chef.png";
 import agrisync from "../images/agrisync.png";
 import web_quize from "../images/web quiz.png";
 import healthcare_dashborad from "../images/healthcare dashboard.png";
@@ -43,6 +43,22 @@ const projects = [
     live: "https://github.com/surajshinde87/AgriSync.git",
   },
   {
+  title: "AI Recipe Chef – AI-Based Recipe Generation Platform",
+  description:
+    "An AI-powered full-stack application that generates complete recipes, ingredient quantities, and cooking steps based on user-entered ingredients using Spring AI and Ollama.",
+  image: recipechef,
+  technologies: [
+    "React.js",
+    "Java",
+    "Spring Boot",
+    "Spring AI",
+    "Ollama",
+    "Framer Motion",
+    "REST APIs"
+  ],
+  live: "https://github.com/surajshinde87/Spring-AI/tree/main/recipe-suggester",
+},
+  {
     title: "HealthCare Dashboard",
     description: "A responsive healthcare dashboard UI showcasing patient data, appointments, and analytics.",
     image: healthcare_dashborad,
@@ -52,14 +68,6 @@ const projects = [
     live: "https://healthcareappdashboard.netlify.app/",
   },
 
-  {
-    title: " Agrios - Landing Page",
-    description:
-      "Agricultural website landing page with working functionality.",
-    image: agrios,
-    technologies: ["HTML", "CSS", "Javascript", "Tailwind CSS"],
-    live: "https://surajshinde87.github.io/agrios-landing-page/",
-  },
   {
     title: "Quiz Website",
     description:
