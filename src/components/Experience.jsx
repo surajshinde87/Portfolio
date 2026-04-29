@@ -3,6 +3,19 @@ import { motion } from "framer-motion";
 import { Server } from "lucide-react";
 
 const experiences = [
+    {
+    role: "Jr. Software Developer",
+    company: "Dakshabhi IT Solutions Pvt. Ltd.", 
+    duration: "Present",
+    responsibilities: [
+      "Developing scalable applications using Java, React, and Spring Boot.",
+      "Working on CI/CD pipelines and automation using Jenkins.",
+      "Contributing to the Electronic Visa (e-Visa) project for efficient digital processing.",
+      "Collaborating with cross-functional teams to build and maintain robust systems.",
+      "Debugging and optimizing application performance across frontend and backend.",
+    ],
+    icon: <Server className="w-8 h-8" />,
+  },
   {
     role: "Software Intern",
     company: "PRYM Aerospace Pvt. Ltd.",
@@ -51,7 +64,7 @@ export const Experience = () => {
         </motion.div>
 
         {/* Experience Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 w-full">
+        <div className="grid grid-cols-1 md:grid-cols lg:grid-cols gap-8 w-full">
           {experiences.map((experience, index) => (
             <motion.div
               key={index}
