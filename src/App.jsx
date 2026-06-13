@@ -8,6 +8,7 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { Experience } from './components/Experience';
 import Blog from './components/Blog';
+import { CodeDebuggerGame } from './components/CodeDebuggerGame';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Projects />
         <Skills />
         <Blog/>
+        <CodeDebuggerGame/>
         <Contact />
       </main>
       <Footer />
