@@ -17,7 +17,7 @@ export const Navbar = () => {
     { to: "blog", label: "Blog" },
     { to: "bughunt", label: "Bug Hunt" },
     { to: "contact", label: "Contact" }
-    
+
   ];
 
   return (

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://surajshindeportfolio.netlify.app/sitemap.xml

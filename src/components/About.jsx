@@ -54,10 +54,8 @@ export const About = () => {
 
         <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 max-w-3xl mx-auto mb-14">
           Hey, I'm <span className="font-semibold text-blue-600 dark:text-blue-400">Suraj Shinde</span> 👋.
-          I'm a <span className="font-medium">Full Stack Software Developer</span> who loves turning ideas into
-          functional, scalable, and beautiful web applications. My focus is always on creating
-          <span className="italic"> experiences that matter</span> — whether it's solving real-world problems or making
-          products more delightful to use.
+          I'm a dedicated <span className="font-medium">Full Stack Software Developer</span> who specializes in building scalable web applications with Java, Spring Boot, React.js, and modern cloud technologies. My focus is always on creating
+          <span className="italic"> high-impact solutions</span> — whether it's solving real-world business challenges or designing smooth, responsive interfaces.
         </p>
 
         <div className="grid md:grid-cols-3 gap-8 mt-10" style={{ perspective: "1200px" }}>

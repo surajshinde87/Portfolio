@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, Download } from "lucide-react";
-import photo from "../images/suraj.jpg";
+import photo from "../images/suraj-shinde.png";
 import Typewriter from "typewriter-effect";
 
 export const Hero = () => {
@@ -71,9 +71,9 @@ export const Hero = () => {
           {/* Social Links */}
           <div className="flex gap-4 justify-center md:justify-start mt-2">
             {[
-              { icon: <Github size={22} />, link: "https://github.com/surajshinde87", hover: "hover:text-gray-700 dark:hover:text-gray-200" },
-              { icon: <Linkedin size={22} />, link: "https://www.linkedin.com/in/suraj-shinde-1039a42ba/", hover: "hover:text-blue-500" },
-              { icon: <Mail size={22} />, link: "mailto:jsurajpshinde@gmail.com", hover: "hover:text-green-500" },
+              { label: "Suraj Shinde on GitHub", icon: <Github size={22} />, link: "https://github.com/surajshinde87", hover: "hover:text-gray-700 dark:hover:text-gray-200" },
+              { label: "Suraj Shinde on LinkedIn", icon: <Linkedin size={22} />, link: "https://www.linkedin.com/in/suraj-shinde-1039a42ba/", hover: "hover:text-blue-500" },
+              { label: "Email Suraj Shinde", icon: <Mail size={22} />, link: "mailto:jsurajpshinde@gmail.com", hover: "hover:text-green-500" },
             ].map((social, idx) => (
               <motion.a
                 key={idx}
@@ -82,6 +82,7 @@ export const Hero = () => {
                 href={social.link}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={social.label}
                 className={`p-3 rounded-2xl bg-gradient-to-br from-white to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-200 shadow-[0_6px_16px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.6)] dark:shadow-[0_6px_16px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.05)] border border-white/50 dark:border-gray-700/50 transition-colors ${social.hover}`}
               >
                 {social.icon}
@@ -116,7 +117,10 @@ export const Hero = () => {
 
             <img
               src={photo}
-              alt="Suraj Shinde"
+              alt="Suraj Shinde - Full Stack Software Developer"
+              width="320"
+              height="320"
+              fetchPriority="high"
               className="
                 relative z-10
                 rounded-full

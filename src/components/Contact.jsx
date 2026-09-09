@@ -45,7 +45,7 @@ export const Contact = () => {
         "hR0oGdKBUyxSWWiGd"
       );
 
-      toast.success("Message sent and auto-reply delivered!", {
+      toast.success("Message sent", {
         id: "email-toast",
       });
       setFormData({ name: "", email: "", message: "" });
@@ -128,6 +128,7 @@ export const Contact = () => {
                 href={card.href}
                 target={card.title === "WhatsApp" ? "_blank" : undefined}
                 rel={card.title === "WhatsApp" ? "noopener noreferrer" : undefined}
+                aria-label={`Contact Suraj Shinde via ${card.title}`}
                 whileHover={{ y: -6, scale: 1.01 }}
                 className="flex items-center gap-5 p-6 bg-white/80 dark:bg-gray-800/80 backdrop-blur-md border border-white/60 dark:border-gray-700/50 rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.08),inset_0_1px_0_rgba(255,255,255,0.7)] dark:shadow-[0_10px_30px_rgba(0,0,0,0.4)] hover:shadow-[0_20px_45px_rgba(99,102,241,0.2)] dark:hover:shadow-[0_20px_45px_rgba(99,102,241,0.15)] transition-shadow duration-300 cursor-pointer"
               >

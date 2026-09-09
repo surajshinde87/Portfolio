@@ -114,7 +114,9 @@ export const Projects = () => {
               <div className="relative h-52 overflow-hidden">
                 <img
                   src={project.image}
-                  alt={project.title}
+                  alt={`${project.title} - Project by Suraj Shinde`}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
@@ -132,6 +134,7 @@ export const Projects = () => {
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label={`View project details for ${project.title}`}
                     whileHover={{ scale: 1.06, y: -2 }}
                     whileTap={{ scale: 0.97 }}
                     className={`px-5 py-2.5 bg-gradient-to-r ${project.gradient} text-white rounded-xl flex items-center gap-2 font-semibold shadow-[0_10px_24px_rgba(0,0,0,0.35),inset_0_1px_0_rgba(255,255,255,0.3)]`}
@@ -167,7 +170,7 @@ export const Projects = () => {
         </div>
 
         {/* Sister's portfolio shoutout */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
@@ -189,7 +192,7 @@ export const Projects = () => {
             View My Sister's Work
             <ExternalLink className="w-4 h-4" />
           </motion.a>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

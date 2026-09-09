@@ -5,10 +5,10 @@ import { motion } from 'framer-motion';
 
 export const Footer = () => {
   const socials = [
-    { icon: <Github className="w-5 h-5" />, link: 'https://github.com/surajshinde87', gradient: 'from-gray-500 to-gray-700' },
-    { icon: <Linkedin className="w-5 h-5" />, link: 'https://www.linkedin.com/in/suraj-shinde-1039a42ba/', gradient: 'from-blue-500 to-cyan-500' },
-    { icon: <Twitter className="w-5 h-5" />, link: 'https://x.com/surajshinde_87', gradient: 'from-sky-400 to-blue-500' },
-    { icon: <Mail className="w-5 h-5" />, link: 'mailto:surajpshinde8767@gmail.com', gradient: 'from-green-500 to-emerald-500' },
+    { name: 'Suraj Shinde on GitHub', icon: <Github className="w-5 h-5" />, link: 'https://github.com/surajshinde87', gradient: 'from-gray-500 to-gray-700' },
+    { name: 'Suraj Shinde on LinkedIn', icon: <Linkedin className="w-5 h-5" />, link: 'https://www.linkedin.com/in/suraj-shinde-1039a42ba/', gradient: 'from-blue-500 to-cyan-500' },
+    { name: 'Suraj Shinde on Twitter / X', icon: <Twitter className="w-5 h-5" />, link: 'https://x.com/surajshinde_87', gradient: 'from-sky-400 to-blue-500' },
+    { name: 'Email Suraj Shinde', icon: <Mail className="w-5 h-5" />, link: 'mailto:surajpshinde8767@gmail.com', gradient: 'from-green-500 to-emerald-500' },
   ];
 
   return (
@@ -30,7 +30,7 @@ export const Footer = () => {
               /&gt;
             </h3>
             <p className="text-gray-400 max-w-xs">
-              Crafting modern, scalable, responsive web apps.
+              Full Stack Software Developer crafting scalable, modern web applications.
             </p>
           </div>
 
@@ -42,6 +42,7 @@ export const Footer = () => {
                 href={social.link}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={social.name}
                 whileHover={{ y: -5, scale: 1.08 }}
                 whileTap={{ scale: 0.95 }}
                 className={`relative w-12 h-12 flex items-center justify-center rounded-2xl bg-gradient-to-br ${social.gradient} text-white shadow-[0_8px_20px_rgba(0,0,0,0.35),inset_0_1px_0_rgba(255,255,255,0.25)] hover:shadow-[0_12px_28px_rgba(0,0,0,0.45)] transition-shadow`}
@@ -86,7 +87,7 @@ export const Footer = () => {
           </p>
 
           {/* Back to top button */}
-          <Link to="home" smooth={true} duration={500}>
+          <Link to="home" smooth={true} duration={500} aria-label="Back to top of Suraj Shinde's portfolio">
             <motion.div
               whileHover={{ y: -4, boxShadow: "0 12px 24px rgba(99,102,241,0.4)" }}
               whileTap={{ scale: 0.95 }}
